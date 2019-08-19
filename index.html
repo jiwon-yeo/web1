@@ -4,36 +4,69 @@
   <title>FickleZone</title>
   <meta charset="utf-8">
   <style>
-  a {
-    color:yellow;
+  a:link {
+    color: darkgray;
     text-decoration: none;
   }
+  a:visited {
+    color: #32a1ce;
+  }
+  a:hover {
+    color:orange;
+  }
   h1 {
+    border: thick double;
+    border-color: gold #32a1ce;
     font-size: 100px;
     text-align: center;
+  }
+  h2 {
+    border-bottom: 1px lightgray solid;
+    margin: 0px;
+    text-align: center;
+    font-size: 20px;
+  }
+  ol {
+    border-right: thick double #32a1ce;
+    width: 100px;
+    margin:0px;
+    padding: 30px;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid #article {
+    padding-left:25px;
   }
   </style>
 </head>
 <body>
-<a href="https://www.tistory.com/ficklyzone" targets="_blank" title="My Blog">
-<h1>Fickle Zone</h1></a>
-<p>
-<p style="margin-top:45px;">I have lots of things to share with the world.</p>
-<p>For instance, how my constant desire to <strong>learn</strong> and <strong>apply</strong> it to the real world <u>strengthened</u> me.</p>
-<br>
-<p>매일을 새로운 것으로 채우고 싶습니다. 여러분의 관심사, 취미는 무엇인가요?</p>
-<img src="Lights.jpeg" width="50%">
-<br>
-<br>
-<ol>
-<li><a href="2.html" style="color:red;text-decoration:underline"> 책 </a> </li>
-<li><a href="3.html"><font color="red">이벤트</font></a> </li>
-<li><a href="4.html"><font color="red">충전</font></a> </li>
-</ol>
-<li>이 웹페이지에 도움이 된 친구들<li>
-생활코딩
-아이패드
-맥북
-나
-</body>
+  <a href="https://fickly.tistory.com" targets="_blank" title="My Blog">
+  <h1>Fickle Zone</h1></a>
+  <p>
+    <p style="margin-top:45px;">I have lots of things to share with the world.</p>
+  <p>For instance, how my constant desire to <strong>learn</strong> and <strong>apply</strong> it to the real world <u>strengthened</u> me.</p>
+  <br>
+  <p>매일을 새로운 것으로 채우고 싶습니다. 여러분의 관심사, 취미는 무엇인가요?</p>
+  <img src="Lights.jpeg" width="50%">
+  <br>
+  <br>
+  <div id="grid">
+    <ol>
+      <h2> 메뉴 </h2>
+      <br>
+      <li><a href="2.html" class="saw">강연</a> </li>
+      <li><a href="3.html" class="saw">읽을거리</a> </li>
+      <li><a href="4.html" class="saw">충전</a> </li>
+    </ol>
+    <div id="article">
+      <h3> 강연 </h3>
+      <p>
+        제가 들은 강연을 정리해놓았습니다. 커리어연세에서 열리는 강의, CP Team에서 열어준 글로벌 취업 콘서트, 여성 테크 행사 등 발로 뛰어 찾아낸 강연들을 정리하고, 간략한 감상문을 올릴 예정입니다.
+      </p>
+    </div>
+  </div>
+  <br>
+  <br>
 </html>
