@@ -1,0 +1,40 @@
+a:link {
+  color: darkgray;
+  text-decoration: none;
+}
+a:visited {
+  color: #32a1ce;
+}
+a:hover {
+  color:orange;
+}
+h1 {
+  border: thick double;
+  border-color: gold #32a1ce;
+  font-size: 100px;
+  text-align: center;
+}
+@media(min-width:800px) {
+  #grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+}
+#grid ol {
+  border-right: thick double #32a1ce;
+  width: 100px;
+  margin:0px;
+  padding: 30px;
+}
+#grid ol h2{
+  border-bottom: 1px lightgray solid;
+  margin: 0px;
+  text-align: center;
+  font-size: 20px;
+}
+#grid #article {
+  padding-left:25px;
+}
+@media(min-width:800px) {
+
+}
